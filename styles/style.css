@@ -81,6 +81,21 @@
     display: none;
 }
 
+/* logo section  */
+.logo-container{
+  width: 90%;
+  height: 100px;
+  /* background-color: bisque; */
+  border-top: 1px solid rgba(0, 0, 0, 0.132);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.132);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin: 50px auto;
+}
+
+/* responsive section  */
 @media screen and (max-width: 576px) {
   /* navbar sectionj  */
   .nav-container {
@@ -97,6 +112,7 @@
   .banner-container{
     flex-direction: column;
     gap: 20px;
+    flex-direction: column-reverse;
   }
   .banner-content{
     padding-left: 10px;
@@ -109,4 +125,26 @@
   .camera{
     width: 100%;
   }
+
+  /* logos section  */
+  .logo-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    border: none;
+    padding: 0px auto;
+    gap: 10px;
+  }
+  .logo img{
+    width: 20vw;
+
+  }
+  .logo{
+    /* align-items: center; */
+    margin: 10px auto;
+  }
+
+
 }
