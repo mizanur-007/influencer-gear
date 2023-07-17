@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@400;700;800&display=swap");
+
+/* varable create  */
+:root {
+  --primary-title-color: #3a3a3a;
+  --primary-font: "Poppins", sans-serif;
+}
+
+/* header section  */
+
+/* nav bar part  */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  gap: 150px;
+}
+.nav-menu ul a {
+  text-decoration: none;
+  /* margin-right: 10px; */
+  color: var(--primary-title-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.nav-title {
+  color: var(--primary-title-color);
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+/* banner section  */
+.banner-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.banner-img {
+  background-image: url("../images/Circle\ design.svg");
+  /* background-color: aquamarine; */
+  width: 450px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.banner-title {
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  color: var(--primary-title-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.banner-info {
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: var(--primary-title-color);
+}
+.btn-1 {
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 25px;
+  border: none;
+  margin-top: 15px;
+  color: white;
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+  /* navbar sectionj  */
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* banner section  */
+  .banner-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-content{
+    padding-left: 10px;
+    text-align: center;
+  }
+  .banner-img{
+    width: 70%;
+    height: auto;
+  }
+  .camera{
+    width: 100%;
+  }
+}
